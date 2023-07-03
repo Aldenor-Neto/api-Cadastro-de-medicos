@@ -63,8 +63,12 @@ public class Medico {
             this.telefone = dados.telefone();
         }
 
+        if (dados.especialidade() != null) {
+            this.especialidade = dados.especialidade();
+        }
+
         if (dados.endereco() != null) {
-            this.endereco.atualizarEndereco(dados.endereco());
+            this.endereco.atualizarEndereco(dados.endereco());;
         }
 
     }

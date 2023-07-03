@@ -1,7 +1,6 @@
 package com.api.hospital.medico;
 
-import com.api.hospital.endereco.Endereco;
-
+import com.api.hospital.endereco.DadosEndereco;
 import jakarta.validation.constraints.NotNull;
 
 public record DadosAtualizarMedico(
@@ -9,6 +8,7 @@ public record DadosAtualizarMedico(
                 String nome,
                 String Email,
                 String telefone,
-                Endereco endereco) {
+                Especialidade especialidade,
+                DadosEndereco endereco) {
 
 }

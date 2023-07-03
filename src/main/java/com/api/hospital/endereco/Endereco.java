@@ -28,29 +28,29 @@ public class Endereco {
         this.uf = dados.uf();
     }
 
-    public void atualizarEndereco(Endereco dados) {
-        if (dados.getRua() != null) {
-            this.rua = dados.getRua();
+    public void atualizarEndereco(DadosEndereco dados) {
+        if (dados.rua()!= null) {
+            this.rua = dados.rua();
         }
 
-        if (dados.getNumero() != null) {
-            this.numero = dados.getNumero();
+        if (dados.numero() != null) {
+            this.numero = dados.numero();
         }
 
-        if (dados.getComplemento() != null) {
-            this.complemento = dados.getComplemento();
+        if (dados.complemento() != null) {
+            this.complemento = dados.complemento();
         }
 
-        if (dados.getBairro() != null) {
-            this.bairro = dados.getBairro();
+        if (dados.bairro() != null) {
+            this.bairro = dados.bairro();
         }
 
-        if (dados.getCidade() != null) {
-            this.cidade = dados.getCidade();
+        if (dados.cidade() != null) {
+            this.cidade = dados.cidade();
         }
 
-        if (dados.getUf() != null) {
-            this.uf = dados.getUf();
+        if (dados.uf() != null) {
+            this.uf = dados.uf();
         }
 
     }
