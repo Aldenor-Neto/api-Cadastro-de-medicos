@@ -1,4 +1,4 @@
-package com.api.hospital.medico;
+package com.api.hospital.domain.medico;
 
 public enum Especialidade {
     PEDIATRIA,

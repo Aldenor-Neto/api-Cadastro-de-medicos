@@ -1,4 +1,4 @@
-package com.api.hospital.medico;
+package com.api.hospital.domain.medico;
 
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;

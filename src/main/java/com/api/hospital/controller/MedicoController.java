@@ -17,14 +17,15 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.util.UriComponentsBuilder;
 
-import com.api.hospital.medico.DadosAtualizarMedico;
-import com.api.hospital.medico.DadosCadastroMedico;
-import com.api.hospital.medico.DadosDetalhamentoMedico;
-import com.api.hospital.medico.DadosListagemMedicos;
-import com.api.hospital.medico.Medico;
-import com.api.hospital.medico.MedicoRepository;
+import com.api.hospital.domain.medico.DadosAtualizarMedico;
+import com.api.hospital.domain.medico.DadosCadastroMedico;
+import com.api.hospital.domain.medico.DadosDetalhamentoMedico;
+import com.api.hospital.domain.medico.DadosListagemMedicos;
+import com.api.hospital.domain.medico.Medico;
+import com.api.hospital.domain.medico.MedicoRepository;
 
 import jakarta.transaction.Transactional;
+import jakarta.validation.Valid;
 
 @RestController
 @RequestMapping("/medico")

@@ -1,6 +1,6 @@
-package com.api.hospital.medico;
+package com.api.hospital.domain.medico;
 
-import com.api.hospital.endereco.DadosEndereco;
+import com.api.hospital.domain.endereco.DadosEndereco;
 
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
