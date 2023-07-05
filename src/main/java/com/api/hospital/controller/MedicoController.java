@@ -1,7 +1,5 @@
 package com.api.hospital.controller;
 
-import java.util.List;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -25,7 +23,6 @@ import com.api.hospital.domain.medico.Medico;
 import com.api.hospital.domain.medico.MedicoRepository;
 
 import jakarta.transaction.Transactional;
-import jakarta.validation.Valid;
 
 @RestController
 @RequestMapping("/medico")

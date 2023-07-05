@@ -1,4 +1,4 @@
-package com.api.hospital.infra;
+package com.api.hospital.infra.exception;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.FieldError;
@@ -16,7 +16,6 @@ public class TratadorDeErros {
         return ResponseEntity.notFound().build();
     }
 
-    // código omitido
 
     @ExceptionHandler(MethodArgumentNotValidException.class)
     public ResponseEntity tratarErro400(MethodArgumentNotValidException ex) {
@@ -26,7 +25,6 @@ public class TratadorDeErros {
 
     }
 
-    
     private record DadosErroValidacao(String campo, String mensagem) {
         public DadosErroValidacao(FieldError erro) {
             this(erro.getField(), erro.getDefaultMessage());

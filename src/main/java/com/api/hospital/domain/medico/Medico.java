@@ -1,6 +1,5 @@
 package com.api.hospital.domain.medico;
 
-import com.api.hospital.domain.endereco.DadosEndereco;
 import com.api.hospital.domain.endereco.Endereco;
 
 import jakarta.persistence.Embedded;
